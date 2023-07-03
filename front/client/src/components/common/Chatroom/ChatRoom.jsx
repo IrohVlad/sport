@@ -4,7 +4,7 @@ import Chat from "./Chat";
 import { useDispatch, useSelector } from 'react-redux';
 import { addFollow } from '../../../redux/thunks/followThunks';
 
-const socket = io.connect('http://localhost:4042')
+const socket = io.connect('http://62.113.105.113:4042')
 
 function ChatRoom({event}) {
 	const [showChat, setShowChat] = useState(false)

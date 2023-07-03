@@ -19,9 +19,9 @@ const LeftSideBar = ({bg}) => {
   }
 
   useEffect( async () => {
-    const sports = await axios.get('http://localhost:4042/sports', { withCredentials: true });
+    const sports = await axios.get('http://62.113.105.113:4042/sports', { withCredentials: true });
     setSportList(sports.data);
-    const sportplaces = await axios.get('http://localhost:4042/sportplaces', { withCredentials: true });
+    const sportplaces = await axios.get('http://62.113.105.113:4042/sportplaces', { withCredentials: true });
     setSportPlaces(sportplaces.data)
   }, [])
 

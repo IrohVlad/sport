@@ -38,7 +38,7 @@ export default function AboutEventModal({event, children}) {
               <p>Окончание: {event.endTime}</p>
               <p>Участники: </p>
               <AvatarGroup max={4}>
-                {curEvent && curEvent.followers?.map(fol => <Avatar src={(fol?.photoSrc?.length < 40) ? `http://localhost:4042/img/${fol.photoSrc}` : `${fol.photoSrc}`}/>)}
+                {curEvent && curEvent.followers?.map(fol => <Avatar src={(fol?.photoSrc?.length < 40) ? `http://62.113.105.113:4042/img/${fol.photoSrc}` : `${fol.photoSrc}`}/>)}
               </AvatarGroup>
               </Card.Text>
               {isAuth ? <ChatRoom event={event}  /> : console.log('not_auth')}

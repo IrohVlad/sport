@@ -39,14 +39,14 @@ export default function AddEventModal() {
   const [sports, setSports] = useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:4042/sports').then(res => res.json()).then(data => setSports(data))
+    fetch('http://62.113.105.113:4042/sports').then(res => res.json()).then(data => setSports(data))
   },[])
   // console.log('---------------------------------',sportIdInput);
   
   const [places, setPlaces] = useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:4042/places').then(res => res.json()).then(data => setPlaces(data))
+    fetch('http://62.113.105.113:4042/places').then(res => res.json()).then(data => setPlaces(data))
   },[])
   // console.log('---------------------------------',places);
 
