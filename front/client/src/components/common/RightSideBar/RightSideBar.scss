@@ -1,0 +1,51 @@
+.rightSideBar{
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: scroll;
+
+  &__item{
+    background-color: #F6FBEF;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+  }
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+
+    &--date {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+    }
+    &--time {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  &__bottom{
+    &--title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    &--about {
+      font-size: 12px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+}
+
